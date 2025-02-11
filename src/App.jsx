@@ -5,6 +5,7 @@ import Products from './pages/products/products';
 import WhyUs from './pages/why_us/whyus';
 import AboutUs from './pages/about/about';
 import Cases from './pages/cases/cases';
+import Blog from './pages/blog/blog';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/why-us" element={<WhyUs />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/cases" element={<Cases />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </Router>
   );
