@@ -28,32 +28,39 @@ const HomePage = () => {
             into people and culture and streamline your daily <br /> operations with your own branded app.
           </p>
 
-          {/* Input and Button */}
-          <div style={{ display: "flex", alignItems: "center", gap: "2%", marginTop: "3%" }}>
-            <input
-              type="email"
-              placeholder="Enter work email"
-              style={{
-                padding: "3%",
-                width: "40%",
-                border: "1px solid #ccc",
-                borderRadius: "5px",
-              }}
-            />
-            <button
-              style={{
-                padding: "3% 4%",
-                backgroundColor: "#4CAF50",
-                color: "white",
-                border: "none",
-                cursor: "pointer",
-                borderRadius: "5px",
-                position: "relative",
-              }}
-            >
-              Book a demo
-            </button>
-          </div>
+          <div style={{ position: "relative", width: "40%" }}>
+  <input
+    type="email"
+    placeholder="Enter work email"
+    style={{
+      width: "100%",
+      padding: "10px",
+      border: "1px solid #ccc",
+      borderRadius: "5px",
+      outline: "none",
+      fontSize: "16px",
+      paddingRight: "110px", // Increased padding to push button further right
+    }}
+  />
+  <button
+    style={{
+      position: "absolute",
+      right: "-118px", // Shifted more to the right
+      top: "50%",
+      transform: "translateY(-50%)",
+      backgroundColor: "#4CAF50",
+      color: "white",
+      border: "none",
+      padding: "8px 18px", // Adjusted padding for better fit
+      borderRadius: "5px",
+      cursor: "pointer",
+      fontSize: "14px",
+    }}
+  >
+    Book a demo
+  </button>
+</div>
+
 
           {/* Statistics */}
           <div style={{ marginTop: "5%", display: "flex", gap: "5%", flexWrap: "wrap", alignItems: "center" }}>
